@@ -1,5 +1,11 @@
 import React from 'react';
 
-const Button = ({text}) => <button type="submit">{text}</button>;
+export const buttonClickHandler = () => window.alert('In your face.');
+
+const Button = ({onClick, text}) => (
+    <button onClick={onClick} type="submit">
+        {text}
+    </button>
+);
 
 export default Button;
