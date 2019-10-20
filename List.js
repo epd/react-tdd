@@ -1,15 +1,12 @@
 import React from 'react';
 
-const doSomeListMagic = (item, idx) =>
-    idx % 2 === 0 ? item.toUpperCase() : item.toLowerCase();
+import {conditionalCaseTransform} from './utils';
 
 const List = ({items}) => (
     <ul>
         {items.map((item, idx) => (
-            <li key={idx}>{doSomeListMagic(item, idx)}</li>
+            <li key={idx}>{conditionalCaseTransform(item, idx)}</li>
         ))}
-
-        {/* <li key={idx}>{item.toUpperCase()}</li> */}
     </ul>
 );
 
