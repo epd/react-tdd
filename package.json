@@ -1,0 +1,38 @@
+{
+    "name": "react-tdd",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.6.4",
+        "@babel/preset-env": "^7.6.3",
+        "@babel/preset-react": "^7.6.3",
+        "babel-jest": "^24.9.0",
+        "enzyme": "^3.10.0",
+        "enzyme-adapter-react-16": "^1.15.1",
+        "jest": "^24.9.0"
+    },
+    "dependencies": {
+        "react": "^16.10.2",
+        "react-dom": "^16.10.2"
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "./setup-tests.js"
+        ],
+        "transform": {
+            "^.+\\.js$": "babel-jest"
+        }
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ]
+    }
+}
