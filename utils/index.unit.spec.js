@@ -1,4 +1,4 @@
-import {conditionalCaseTransform} from './utils';
+import {conditionalCaseTransform} from './';
 
 describe('conditionalCaseTransform', () => {
     it('changes text based on the params passed in', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {conditionalCaseTransform} from './utils';
+import {conditionalCaseTransform} from '../utils';
 
 const List = ({items}) => (
     <ul>
